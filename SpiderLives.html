@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Spider Lives!</title>
+    <style>
+        
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: "Lucida Grande", Tahoma, Arial, sans-serif;
+            color: #f8f0ff;
+            background: url("https://cdn.corenexis.com/files/c/2911628720.png") no-repeat center fixed,
+             radial-gradient(circle at top, #3b0d4b 0%, #120011 55%, #050005 100%) fixed center;
+             background-size:80% auto, cover;
+            overflow-x: hidden;
+        }
+
+        .spider-logo {
+            width: 250px;
+            height: 250px;
+            right: 2px;
+            left: auto;
+            top: 2px;
+            float: right; 
+            position:sticky;
+               }
+
+               .spider-logosmall {
+            display: block;
+            width: 75px;
+            height: 75px;
+            right: 2px;
+            left: auto;
+            top: 2px;
+               }
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background-image:
+                radial-gradient(circle, rgba(255, 255, 255, 0.9) 1px, transparent 1px),
+                radial-gradient(circle, rgba(255, 180, 255, 0.8) 1px, transparent 1px);
+            background-size: 100px 100px, 60px 60px;
+            opacity: 0.12;
+            pointer-events: none;
+        }
+
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px 20px 80px;
+            position: relative;
+        }
+
+        .logo {
+            display: inline-block;
+            border: 2px dashed #d19bff;
+            padding: 20px 16px;
+            margin-bottom: 20px;
+            color: #f0c5ff;
+            font-size: 3rem;
+            letter-spacing: 1px;
+            text-shadow: 0 0 12px rgba(255, 200, 255, 0.5);
+        }
+
+        .tagline {
+            margin: 10px 0 24px;
+            color: #c9f7ff;
+            font-size: 1.1rem;
+        }
+
+        .box {
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            background: rgba(16, 3, 32, 0.86);
+            backdrop-filter: blur(12px);
+            padding: 18px;
+            margin-bottom: 18px;
+            box-shadow: 0 0 24px rgba(122, 71, 193, 0.18);
+        }
+
+        .box h2 {
+            margin: 0 0 10px;
+            font-size: 1.35rem;
+            color: #ffd9ff;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        .box p {
+            line-height: 1.65;
+            color: #e7d7ff;
+            margin: 0;
+        }
+
+        .box a {
+            color: #9ae6ff;
+            text-decoration: none;
+            border-bottom: 1px dashed #9ae6ff;
+        }
+
+        .sparkle {
+            display: inline-block;
+            margin: 0 4px;
+            color: #ffafff;
+            animation: sparkle 2.7s infinite;
+        }
+
+        @keyframes sparkle {
+            0%, 100% { opacity: 0.7; transform: translateY(0) scale(1); }
+            50% { opacity: 1; transform: translateY(-4px) scale(1.15); }
+        }
+
+        .top8 {
+            display: grid;
+            gap: 14px;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        }
+
+        .friend-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            padding: 14px;
+            border-radius: 12px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .friend-card::after {
+            content: "🕷";
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            font-size: 1.3rem;
+            opacity: 0.28;
+        }
+
+        .friend-card h3 {
+            margin: 0 0 6px;
+            font-size: 1rem;
+            color: #f7e6ff;
+        }
+
+        .friend-card p {
+            margin: 0;
+            color: #d8d0ff;
+            font-size: 0.95rem;
+        }
+
+        .note {
+            margin-top: 20px;
+            border-top: 1px dashed rgba(255, 255, 255, 0.2);
+            padding-top: 15px;
+            font-size: 0.95rem;
+            color: #b4aedc;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #a285c4;
+            font-size: 0.9rem;
+        }
+
+        .spider-art {
+            position: fixed;
+            right: 16px;
+            bottom: 16px;
+            font-size: 2rem;
+            opacity: 0.18;
+        }
+        .spidergif {
+            position: fixed;
+            left: 16px;
+            bottom: 16px;
+            width: 120px;
+            height: 120px;
+            opacity: 0.28;
+            background: transparent;
+             border: none;
+             z-index: 5;
+             top: 5px;
+             left: 5px
+        }
+            .spiderimages {
+                 width: 100%;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+                width: 200px;
+                height: auto;
+                margin: 12px auto;
+            }
+    </style>
+</head>
+<body>
+   <iframe class="spidergif" src="https://gifer.com/embed/7NBZ" width="480" height="480" frameBorder="0" allowFullScreen></iframe>
+         <img src="https://cdn.corenexis.com/files/c/2483791720.png" alt="Spider Logo" class="spider-logo" >
+          
+    <div class="page">
+        <div class="logo">Spider-Lives! </div>
+        <div class="tagline">They may be surprise roomates, but they pay rent!</div>
+
+    
+
+        <div class="box">
+            <h2>Fear Me Not!- Just How Dangerous Are Spiders? </h2>
+            <p>Did you know that most spiders are harmless to humans? As in, most of them can't even break skin. . .and even the ones that can usually refuse!
+                Really only TWO spiders are medically significant in IN: The Brown Recluse, and the Black Widow! 
+                Though they can be found here in Indiana, the Black Widow is very rare, and the brown recluse sticks to the southern states, so finding one in Central Indiana is also rare! Not to mention, the recluse stays true to its name, avoiding humans at all costs. In the end, not only are they both very rare, they're also both quite easy to identify, which means you letting most spiders live doesn't risk you letting one of these actually dangerous guys live! 
+                <img src="https://cdn.corenexis.com/files/c/8652933720.png" alt="spiderfactsposter" width="850px" height="auto">
+                Realizing they're by-and-large not dangerous is important because if they're not harmful, you're not actually killing them for saftey or harm reduction, but you're killing the for fear you have now realized is unfounded. I think most of us would agree killing something unneccesarily is wrong. </p>
+        </div>
+
+        
+
+        <div class="box">
+            <h2> "Well They're In MY Space" -Can Spiders Be Good Roomates?</h2>
+            <p> I've heard "Well they're in MY space," a lot. . . but spiders are actually great roomates, and they stay out of your way as much as possible! They pay rent in bodies, bodies of other creepy crawlies you don't want around. 
+                Have a problem with gnats due to a gross HUMAN roomate? No problem! What about those pesky ladybugs constantly ambushing your window? And the stink bugs! None of these guys are a match for your new hidden roomie. Keeping a couple spiders up in the corners of your rooms can help a noticable amount too, not just in theory. Yeah, opting not to kill them helps the spiders themselves a lot, but it also helps you! 
+     <div class="box">
+            <h2> Roomates . . . What About Pets? </h2>
+            <p> Did you know some spiders can even be great pets? Jumping spiders are particularly popular as pets because they are active, intelligent, and relatively easy to care for. They can learn to recognize certain people, play games, and each spider even has preferred snacks and treats like ice cream, honey, etc! Velvet spiders also have been known to make good pets. Velvet spider are a personal favorite of mine, because they look like a little cartoon spider. Look at these guys and tell me you still want to kill spiders. It's impossible!
+                <img src="https://cdn.corenexis.com/files/c/7878121720.jpg" alt=" jumping spider picture" class="spiderimages"> 
+                This is a jumping spider! They're like little bitty cats!
+            <img src="https://cdn.corenexis.com/files/c/9273614720.jpg" alt=" velvet spider picture" class="spiderimages" >
+                This is a velvet spider! They're like little bitty cartoon spiders!
+            </div>
+            </div>
+    
+   <div class="box">            
+            <h2> Small Things, Big Meanings: A Podcast </h2>
+            <p> Interested in a podcast about this topic? I hosted an episode of my podcast about spiders, and focused on convincing the audience not to kill them! During the episode, we talk about how they're not dangerous, genuinely helpful for pest control, and opt to focus on why killing them is the right thing to do ethically, getting a little philosophical with it! If you're interested, check it out below! 
+            <figure>
+  <figcaption>Listen to the Podcast here: </figcaption>
+  <audio controls src="https://files.catbox.moe/4zd02v.mp3"></audio>
+</figure>
+            </p>
+        </div>
+
+    </body>
+</html>

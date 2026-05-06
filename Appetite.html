@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title2>A Poetry Archive by: Luke West</title2>
+    <title> 🦷 Collection One: Appetite 🦷  </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        title2 {
+            font-family: Garamond, serif;
+        }
+
+        body {
+            background-image: 
+                url("https://cdn.corenexis.com/files/c/1238492720.png"),
+                url("https://cdn.corenexis.com/files/c/9278589720.jpg");
+            background-repeat: no-repeat, no-repeat;
+            background-position: 50% 60%, center;
+            background-attachment: fixed, fixed;
+            background-size:1050px 1050px, cover;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Header with glitter effect */
+        .header {
+            background-image: 
+                url("https://cdn.corenexis.com/files/c/3436494720.png"),
+                url("https://cdn.corenexis.com/files/c/3436494720.png"),
+                url("https://cdn.corenexis.com/files/c/7317781720.png");
+           background-color: #8e300ebb;
+            background-size: 50px 50px;
+            background-repeat: no-repeat, no-repeat, repeat-x;
+            background-position: bottom left, bottom right, bottom;
+            border: 5px solid #142e05;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 40px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(1, 1, 0, 0.5);
+            animation: glow 3s ease-in-out infinite;
+            position:relative;
+             z-index: 10;
+        }
+
+        @keyframes glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(36, 4, 4, 0.868); }
+            50% { box-shadow: 0 0 40px rgba(255, 255, 255, 0.6); }
+        }
+
+        .header h1 {
+            font-size: 4em;
+            color: #ffffff;
+            text-shadow: 3px 3px 0px;            
+            color: #dfa8ab;
+            font-style: italic;
+            font-family: garamond, serif;
+            letter-spacing: 2px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .header p {
+            color: #fffacd;
+            font-size: 1.5em;
+            text-shadow: 2px 2px #333;
+            margin-top: 10px;
+            font-family:'Garamond', serif;
+            font-style: Bold;
+        }
+
+        /* Navigation */
+        .dropdown {
+            text-align: center;
+            margin: 20px;
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            border: 3px dashed #6b8e23;
+            border-radius: 15px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            margin: 0 15px;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #6b8e23, #8fbc8f);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: all 0.3s;
+            border: 2px solid #333;
+        }
+
+        .dropdown:hover .dropdown-content{
+            background: linear-gradient(135deg, #228b22, #90ee90);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            animation: glow 4s ease-in-out infinite;
+            display: block;
+        }
+      
+        /* Button shit */
+
+.bg-anchored-button {
+    position: fixed;
+    display: inline-block; /* Makes the link behave like a button */
+    background: transparent;
+    right: 15px;
+    bottom: 470px;
+    border: none; /* Removes default border */
+    padding: 0px; /* Adds space around the image */
+    z-index: index 10;
+    cursor: pointer; 
+}
+
+.bg-anchored-button:hover {
+    max-width: 110%; /* Ensures the image is responsive */
+    height: auto; /* Maintains aspect ratio */
+    width: 50px;
+    height: 47px;
+        filter:
+            drop-shadow(0 0 6px rgba(226, 35, 18, 0.998))
+    drop-shadow(0 0 14px rgba(219, 22, 22, 0.6))
+    drop-shadow(0 0 28px rgba(255,120,50,0.35));
+  transform: scale(1.03);
+}  
+    /*END button shit*/
+    
+.bg-anchored-button img {
+    max-width: 100%; /* Ensures the image is responsive */
+    height: auto; /* Maintains aspect ratio */
+    width: 50px;
+    height: 50px;
+}
+
+        /* Profile Section */
+        .profile {
+            max-width: 1000px;
+            margin: 30px auto;
+            margin-top: 100%;
+            background: #fffef0;
+            border: 5px solid #872916;
+            border-radius: 15px;
+            padding: 30px;
+            position: sticky;
+            z-index: 20;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile h2 {
+            color: #6b8e23;
+            font-size: 2em;
+            margin-bottom: 15px;
+            text-decoration: underline;
+            text-decoration-style: wavy;
+        }
+
+        .profile p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        .profile2 {
+            max-width:1500px;
+            margin: 50px auto;
+            background: #fffef0;
+            border: 5px solid #8fbc8f;
+            border-radius: 15px;
+            padding: 30px;
+            position: sticky;
+            z-index: 20;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile2 h2 {
+            color: #6b8e23;
+            font-size: 2em;
+            margin-bottom: 15px;
+            text-decoration: underline;
+            text-decoration-style: wavy;
+        }
+
+        .profile2 p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+/* Decorative dividers */
+        .divideropaque {
+            text-align: center;
+            margin: 30px 0;
+            font-size: 2em;
+            color: #8e2723;
+            border-radius: 20px;
+             background: linear-gradient(135deg, #f5f5dcbf, #fffacd95);
+             z-index:index 20;
+             position:relative;
+        }
+ .divider {
+            text-align: center;
+            margin: 30px 0;
+            font-size: 2em;
+            color: #8e2723;
+            border-radius: 20px;
+             z-index:index 20;
+             position:relative;
+        }
+        /* Poetry Posts */
+        .poems-container {
+            max-width: 1000px;
+            margin: 30px auto;
+            display: grid;
+            gap: 20px;
+        }
+
+        .poem {
+            background: linear-gradient(135deg, #f5f5dc, #fffacd);
+            border: 4px double #a5341d;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+            position: relative;
+            font-family: garamond,cursive;
+
+        }
+
+        .poem::before {
+            content: "🍃 🌿 🍃";
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #fffef0;
+            padding: 0 10px;
+            color: #8e2723;
+            font-size: 1.5em;
+            font-family: garamond,cursive;
+        }
+
+        .poem h3 {
+            color: #8e2723;
+            font-size: 1.8em;
+            text-align: center;
+            margin-bottom: 15px;
+            text-decoration: underline;
+            text-shadow: 1px 1px 0px #8fbc8f;
+        }
+
+        .poem-text {
+            color: #333;
+            font-size: 1.1em;
+            line-height: 2;
+            text-align: center;
+            white-space: pre-wrap;
+            margin-bottom: 15px;
+            font-family: garamond, serif;
+        }
+
+        .poem-date {
+            color: #a5341d;
+            font-size: 0.9em;
+            font-style: italic;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+           background-image: 
+                url("https://cdn.corenexis.com/files/c/3436494720.png"),
+                url("https://cdn.corenexis.com/files/c/3436494720.png"),
+                url("https://cdn.corenexis.com/files/c/7317781720.png");
+           background-color: #d8d7c3bb;
+            background-size: 50px 50px;
+            background-repeat: no-repeat, no-repeat, repeat-x;
+            background-position: bottom left, bottom right, bottom;
+            border: 5px solid #142e05;
+            border-top: 5px solid #8e2723;
+            padding: 30px;
+            margin-top: 40px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .footer p {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+
+    
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1>🦷 Collection One: Appetite 🦷 </h1>
+        <p>~ On Hunger ~</p>
+    </div>
+
+    <!-- Navigation -->
+    <div class=dropdown>
+        Menu
+        <div class="dropdown-content">
+        <p> About Me: I am Author this is Placeholder. </p>
+        <p>>Welcome to My Dell, blah blah blah . . . </p>
+
+    </div class=dropdown-content>
+    </div class=dropdown>
+ 
+    <!-- Poems Containing Button 1 -->
+
+<a href="SpiderLives.html" class="bg-anchored-button">
+    <img src="https://cdn.corenexis.com/files/c/2911628720.png" alt="Button Image">
+</a>
+
+<div class="divider">🌾 🌿 🌾 🌿 🌾</div>
+
+    <div class="divider">🌾 🌿 🌾 🌿 🌾</div>
+ 
+
+
+    <!-- Profile Section -->
+    <div class="profile2">
+        <h2>Listen To Your Appetite. It speaks to You.</h2>
+        <p>
+Through grumbles, desires, it voices it's needs. Take and eat. Eat your Fill.  </p>
+        <p>
+            <div class="poem-date">🌙 Posted: 11:30pm, April 17, 2026</div>
+        </p>
+    </div>
+
+    <div class="divideropaque"> We All Hunger For Something. </div>
+
+ <div class="poems-container" id="poems">
+        <div class="poem">
+            <h3>🥩A Meal of Pity🥩</h3>
+            <div class="poem-text">
+With Our Crooked Teeth
+    we eat our Pity. 
+We chew on it:
+    It is tough, stringy.
+
+We do not eat it raw, 
+for fear of mistaking
+the blood as our own.
+
+So we let it, the blood:
+let it leave, and the flesh cook. 
+    Ignorance.
+
+Leaving the occasional pink to 
+    elevate our feeling. Our taste. Our- 
+Closer to the truth, we tease it.
+    But we leave it. Our -
+        Ignorance.
+
+So, with our clogged hearts and fat-logged veins, we rule our borrowed subjects 
+however we please, desecrating the temple in claims of authority above.
+We feast, we gourge, we sicken ourselves. On Ignorance. 
+And we claim pity while the pride sits, stuck, between our incisors, 
+lingering like a film on our tongues, blocking, ignorance.
+
+Yes, with crooked teeth we eat our pity.
+We shove it down our throats like it was never even there, 
+our meal of pity.
+Or pride.</div>
+            <div class="poem-date">🌙 Posted: 11:30pm, April 17, 2026</div>
+        </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>🌿 Luke LastName © 2026 🌿</p>
+        <p>"He will have the pleasure of trying the resources of his spirit" - John Keats</p>
+        <p>~ Thank you for letting your interest win out. ~</p>
+    </div>
+
+</body>
+</html>
+    
+    

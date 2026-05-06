@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title2>A Poetry Archive by: Luke West</title2>
+    <title>  The Void </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        title2 {
+            font-family: Garamond, serif;
+        }
+
+    body {
+            background-image: 
+                url("https://cdn.corenexis.com/files/c/7317781720.png"),
+                url("https://cdn.corenexis.com/files/c/2137773720.jpg");
+            background-repeat: no-repeat,no-repeat;
+            background-position: center,center;
+            background-attachment: fixed,scroll;
+            background-size:cover,cover;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Header with glitter effect */
+        .header {
+            background-image: 
+                url("https://cdn.corenexis.com/files/c/3436494720.png"),
+                url("https://cdn.corenexis.com/files/c/3436494720.png"),
+                url("https://cdn.corenexis.com/files/c/7317781720.png");
+           background-color: #548940bb;
+            background-size: 50px 50px;
+            background-repeat: no-repeat, no-repeat, repeat-x;
+            background-position: bottom left, bottom right, bottom;
+            border: 5px solid #142e05;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 40px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(1, 1, 0, 0.5);
+            animation: glow 3s ease-in-out infinite;
+            position:relative;
+             z-index: 10;
+        }
+
+        @keyframes glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(36, 4, 4, 0.868); }
+            50% { box-shadow: 0 0 40px rgba(255, 255, 255, 0.6); }
+        }
+
+
+       /*TEST for onlick CSS*/
+
+#btnControl {
+    display: none;
+    margin: 20px;
+}
+
+#btnControl:checked + label > iframe {
+    height:0px;
+    width:0px;
+    display: none; 
+    transition: width 0.5s ease, height 0.5s ease;
+}
+
+.btn {
+     text-align: center;
+            margin-left: 20px;
+            margin-right: auto;
+            position: static;
+            background-color: rgba(255, 255, 255, 0.578);
+            border: 3px dashed #6b8e23;
+            border-radius: 15px;
+            cursor: clicker;
+            
+           
+}
+        
+     .EssayWindow {
+        border: 2px solid #d19bff;
+        border-radius: 12px;
+        box-shadow: 0 0 12px rgba(255, 200, 255, 0.5);
+        margin: 20px auto;
+        display: block;
+        background: rgba(16, 3, 32, 0.86);
+        backdrop-filter: blur(12px);
+    }
+
+p2 {
+    color: #5eaebc;
+    position: fixed;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 20px 0;
+    text-shadow: 0 0 8px rgba(255, 200, 255, 0.5);
+    max-width: 40%;
+    padding-top:10px;
+    padding-left: 15%;
+    z-index: 15;
+}
+
+
+</style>
+
+ <!-- Header -->
+    <div class="header">
+        <h1>🌿 Welcome to the Void! 🌿</h1>
+        <p>~ Just a Testing Space for CSS and Writing Embedding Tests ~</p>
+    </div>
+
+    
+<input type="checkbox" id="btnControl"/>
+
+<label class="btn"for="btnControl"> 
+    <iframe class= EssayWindow src="https://docs.google.com/document/d/e/2PACX-1vSTtwUookcOnt4phHxEpbWGXEhuhrfJ9wpXy9d7Jgi5p9x9diJRoFRBKYHoeUPqFuUwauxfOoWqRsY8/pub?embedded=true" width="50%" height="600px" style="border:none;" id="btnLeft" > 
+    </iframe> My Cat Showed Me God [Short Story] </label>
+
+
+</body>
+</html>
+    
+    

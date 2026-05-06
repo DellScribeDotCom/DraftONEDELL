@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title2>A Poetry Archive by: Luke West</title2>
+    <title> 🌿 Notes From The Dell 🌿  </title>
+    <style>
+        p3 {
+            font-family: Garamond, serif;
+            color: #6b8e23;
+            font-style:italic;
+            color: #6b8e23
+        }
+
+        .div {
+            font-family: Garamond, serif;
+            color:#6b8e23;
+        }
+    
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: garamond, serif;
+        }
+
+        title2 {
+            font-family: Garamond, serif;
+        }
+
+        body {
+            background-image: 
+                url("https://cdn.corenexis.com/files/c/7317781720.png"),
+                url("https://cdn.corenexis.com/files/c/2137773720.jpg");
+            background-repeat: no-repeat, no-repeat;
+            background-position: center, center;
+            background-attachment: fixed, scroll;
+            background-size: cover,cover;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+         /* Menu Nav*/
+        .dropdown2 {
+            text-align: center;
+            width: 70px;
+            margin-left: auto;
+            margin-right: 10px;
+            margin-top: 10px;
+            position: static;
+            background-color: rgba(255, 255, 255, 0.578);
+            border: 3px dashed #6b8e23;
+            border-radius: 15px;
+            cursor: pointer;
+            float: right;
+        }
+
+        .dropdown-content2 {
+            display: none;
+            position: absolute;
+            padding: 10px 10px;
+            margin-left: 5px;
+            margin-right: 10px;
+            background: linear-gradient(135deg, #6b8e23, #8fbc8f);
+            color: rgba(255, 255, 255, 0.684);
+            text-decoration: none;
+            border-radius: 10px;
+            transition: all 0.3s;
+            border: 2px solid #333;
+            text-align: right;
+            word-wrap:break-word;
+        }
+
+        .dropdown2:hover .dropdown-content2{
+            background: linear-gradient(135deg, #228b22, #77c477);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            animation: glow 4s ease-in-out infinite;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+            font-weight:bold;
+            text-align: right
+            
+        }
+
+
+        /* Header with glitter effect */
+        .header {
+            background-image: 
+                url("https://cdn.corenexis.com/files/c/3436494720.png"),
+                url("https://cdn.corenexis.com/files/c/3436494720.png"),
+                url("https://cdn.corenexis.com/files/c/7317781720.png");
+           background-color: #decf29bb;
+            background-size: 50px 50px;
+            background-repeat: no-repeat, no-repeat, repeat-x;
+            background-position: bottom left, bottom right, bottom;
+            border: 5px solid #142e05;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 40px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(1, 1, 0, 0.5);
+            animation: glow 3s ease-in-out infinite;
+            position: relative;
+             z-index: 20;
+        }
+
+        @keyframes glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(235, 207, 45, 0.868); }
+            50% { box-shadow: 0 0 40px rgba(255, 255, 255, 0.6); }
+        }
+
+        .header h1 {
+            font-size: 4em;
+            color: #ffffff;
+            text-shadow: 3px 3px 0px #333c15a3;
+            font-style: italic;
+            font-family: garamond, serif;
+            letter-spacing: 2px;
+        }
+
+        .header p {
+            color: #fffacd;
+            font-size: 1.5em;
+            text-shadow: 2px 2px #333;
+            margin-top: 10px;
+            font-family:'Garamond', serif;
+            font-style: Bold;
+        }
+
+        /* Hint Box Css */
+        .dropdown {
+            text-align: center;
+            max-width: 280px;
+            margin-left: auto;
+            margin-right: auto;
+            position: static;
+            background-color: rgba(255, 255, 255, 0.578);
+            border: 3px dashed #6b8e23;
+            border-radius: 15px;
+            cursor: help;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            margin: 0 15px;
+            padding: 10px 10px;
+            margin-left: auto;
+            margin-right: auto;
+            background: linear-gradient(135deg, #6b8e23, #8fbc8f);
+            color: rgba(255, 255, 255, 0.684);
+            text-decoration: none;
+            border-radius: 10px;
+            transition: all 0.3s;
+            border: 2px solid #333;
+            text-align: right;
+        }
+
+        .dropdown:hover .dropdown-content{
+            background: linear-gradient(135deg, #228b22, #77c477);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            animation: glow 4s ease-in-out infinite;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+            font-weight:bold;
+            text-align: right;
+            
+        }
+      
+        /* Button shit */
+
+.bg-anchored-button1 {
+    position: fixed;
+    display: inline-block; /* Makes the link behave like a button */
+    background: transparent;
+    Left: 20px;
+    bottom: 179px;
+    border: none; /* Removes default border */
+    padding: 0px; /* Adds space around the image */
+    z-index: 10;
+    cursor: crosshair; 
+}
+
+.bg-anchored-button1:hover {
+    max-width: 110%; /* Ensures the image is responsive */
+    height: auto; /* Maintains aspect ratio */
+        filter:
+            drop-shadow(0 0 6px rgba(226, 35, 18, 0.998))
+    drop-shadow(0 0 14px rgba(219, 22, 22, 0.6))
+    drop-shadow(0 0 28px rgba(255,120,50,0.35));
+  transform: scale(1.03);
+}  
+    /*  Butt0n Key(s): 1=amanita 2=whitedeath 3=birds 4=cottage */
+
+.bg-anchored-button1 img {
+    max-width: 100%; /* Ensures the image is responsive */
+    height: auto; /* Maintains aspect ratio */
+    width: 50px;
+    height: 50px;
+}
+
+.bg-anchored-button2 {
+    position: fixed;
+    display: inline-block; /* Makes the link behave like a button */
+    background: transparent;
+    Right: 20px;
+    bottom: 129px;
+    border: none; /* Removes default border */
+    padding: 0px; /* Adds space around the image */
+    z-index: 10;
+    cursor: crosshair; 
+    ;
+}
+
+.bg-anchored-button2:hover {
+    max-width: 110%; /* Ensures the image is responsive */
+    height: auto; /* Maintains aspect ratio */
+        filter:
+            drop-shadow(0 0 6px rgba(255, 255, 250, 0.998))
+    drop-shadow(0 0 14px rgba(248, 248, 248, 0.6))
+    drop-shadow(0 0 28px rgba(255,120,50,0.35));
+  transform: scale(1.03);
+}  
+    
+.bg-anchored-button2 img {
+    max-width: 100%; /* Ensures the image is responsive */
+    height: auto; /* Maintains aspect ratio */
+    width: 50px;
+    height: 50px;
+}
+.bg-anchored-button3 {
+    position: scroll;
+    display: inline-block; /* Makes the link behave like a button */
+    background: transparent;
+    Left: 50px;
+    top: 100px;
+    border: none; /* Removes default border */
+    padding: 0px; /* Adds space around the image */
+    z-index: 15;
+    cursor: crosshair; 
+
+}
+
+.bg-anchored-button3:hover {
+    max-width: 110%; /* Ensures the image is responsive */
+    height: auto; /* Maintains aspect ratio */
+        filter:
+            drop-shadow(0 0 6px rgba(0, 0, 0, 0.758))
+    drop-shadow(0 0 14px rgba(30, 29, 29, 0.675))
+    drop-shadow(0 0 28px rgba(255,120,50,0.35));
+  transform: scale(1.03);
+}  
+    
+.bg-anchored-button3 img {
+    max-width: 100%; /* Ensures the image is responsive */
+    height: auto; /* Maintains aspect ratio */
+    width: 150px;
+    height: 110px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.bg-anchored-button4 {
+    position: fixed;
+    display: inline-block; /* Makes the link behave like a button */
+    background: transparent;
+    Left: 68%;
+    bottom: 32%;
+    border: none; /* Removes default border */
+    padding: 0px; /* Adds space around the image */
+    z-index: 10;
+    cursor: crosshair; 
+}
+
+.bg-anchored-button4:hover {
+    max-width: 110%; /* Ensures the image is responsive */
+    height: auto; /* Maintains aspect ratio */
+        filter:
+            drop-shadow(0 0 6px rgba(71, 160, 24, 0.998))
+    drop-shadow(0 0 14px rgba(139, 80, 17, 0.732))
+    drop-shadow(0 0 28px rgba(255,120,50,0.35));
+  transform: scale(1.03);
+}  
+    
+.bg-anchored-button4 img {
+    max-width: 100%; /* Ensures the image is responsive */
+    height: auto; /* Maintains aspect ratio */
+    width: 80px;
+    height: 80px;
+}
+ 
+        /* Profile Section */
+        .profile {
+            max-width: 1000px;
+            margin: 30px auto;
+            margin-top: 100%;
+            background: #fffef0;
+            border: 5px solid #8fbc8f;
+            border-radius: 15px;
+            padding: 30px;
+            position: sticky;
+            z-index: 20;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile h2 {
+            color: #6b8e23;
+            font-size: 2em;
+            margin-bottom: 15px;
+            text-decoration: underline;
+            text-decoration-style: wavy;
+        }
+
+        .profile p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        .profile2 {
+            max-width:1500px;
+            margin: 50px auto;
+            background: #fffef0;
+            border: 5px solid #8fbc8f;
+            border-radius: 15px;
+            padding: 30px;
+            position: sticky;
+            z-index: 20;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile2 h2 {
+            color: #6b8e23;
+            font-size: 2em;
+            margin-bottom: 15px;
+            text-decoration: underline;
+            text-decoration-style: wavy;
+        }
+
+        .profile2 p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+/* Decorative dividers */
+        .divideropaque {
+            text-align: center;
+            margin: 10px 0;
+            font-size: 2em;
+            color: #6b8e23;
+            border-radius: 20px;
+             background: linear-gradient(135deg, #f5f5dcbf, #fffacd95);
+             z-index: 20;
+             position:relative;
+        }
+ .divider {
+            text-align: center;
+            margin: 30px 0;
+            font-size: 2em;
+            color: #6b8e23;
+            border-radius: 20px;
+             z-index: 20;
+             position:relative;
+        }
+        /* Poetry Posts */
+        .poems-container {
+            max-width: 1000px;
+            margin: 30px auto;
+            display: grid;
+            gap: 20px;
+        }
+
+        .poem {
+            background: linear-gradient(135deg, #f5f5dc, #fffacd);
+            border: 4px double #8fbc8f;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+            position: relative;
+            font-family: garamond,cursive;
+
+        }
+
+        .poem::before {
+            content: "🍃 🌿 🍃";
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #fffef0;
+            padding: 0 10px;
+            color: #6b8e23;
+            font-size: 1.5em;
+            font-family: garamond,cursive;
+        }
+
+        .poem h3 {
+            color: #6b8e23;
+            font-size: 1.8em;
+            text-align: center;
+            margin-bottom: 15px;
+            text-decoration: underline;
+            text-shadow: 1px 1px 0px #8fbc8f;
+        }
+
+        .poem-text {
+            color: #333;
+            font-size: 1.1em;
+            line-height: 2;
+            text-align: center;
+            white-space: pre-wrap;
+            margin-bottom: 15px;
+            font-family: garamond, serif;
+        }
+
+        .poem-date {
+            color: #8fbc8f;
+            font-size: 0.9em;
+            font-style: italic;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+           background-image: 
+                url("https://cdn.corenexis.com/files/c/3436494720.png"),
+                url("https://cdn.corenexis.com/files/c/3436494720.png"),
+                url("https://cdn.corenexis.com/files/c/7317781720.png");
+           background-color: #d8d7c3bb;
+            background-size: 50px 50px;
+            background-repeat: no-repeat, no-repeat, repeat-x;
+            background-position: bottom left, bottom right, bottom;
+            border: 5px solid #142e05;
+            border-top: 5px solid #6b8e23;
+            padding: 30px;
+            margin-top: 40px;
+            color: #333;
+            font-weight: bold;
+            position: relative;
+                z-index: 20;
+        }
+
+        .footer p {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+
+    
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+ <!-- Menu Button -->
+
+   <!-- Hint Box -->
+    <div class=dropdown2>
+       <strong> Menu! </strong> 
+        <div class="dropdown-content2">
+        <a href="thevoid.html"> <strong> Poetry </strong></a>
+
+        <a href="placeholder.html"> <strong> Short Stories </strong></a>
+
+        <a href="placeholder.html"> <strong> By Collections </strong></a>
+        
+    </div class=dropdown-content2>
+    </div class=dropdown2>
+    <!-- Header -->
+    <div class="header">
+        <h1>🌿 Notes From the Dell 🌿</h1>
+        <p>~ Words Tumble Forth Like Water, Diveting My Earth ~</p>
+    </div>
+
+
+    <!-- Button Containing poems -->
+
+<a href="Appetite.html" class="bg-anchored-button1">
+    <img src="https://cdn.corenexis.com/files/c/3436494720.png" alt="Button Image">
+</a>
+
+<a href="reflections.html" class="bg-anchored-button2">
+    <img src="https://cdn.corenexis.com/files/c/4219277720.png" alt="Button Image">
+</a>
+
+<a href="housefront.html" class="bg-anchored-button4">
+    <img src="https://cdn.corenexis.com/files/c/3194538720.png" alt="Button Image">
+</a>
+
+<div class="divider"> <strong> ~ ~ ~ </strong></div>
+
+    <!-- Profile Section -->
+    <div class="profile2">
+        <h2>Welcome to My Writings Archive!</h2>
+        <p>
+            Welcome to my little corner of the internet, where I'll be uploading my writings that done, or are not quite finished but finished enough. I don't like posting straight to social media because it feels in-your-face, so I figured I'd have a place that let people keep up with my work if they wanted to! I also coded it all by hand as an art project of its own, so I hope you have fun navigating it and finding all the little secrets! If you don't want to explore, just use the menu in the top corner to navigate by category. Thanks for reading!
+        </p>
+
+        <p>
+            <strong>Song of the Week:</strong> 🎵 <em>Slightly Hung Over, by The Blues Delight</em> 🎵
+        </p>
+
+         <p3> 
+           <strong>Note: For anyone who knows how to code, do not judge my code if you inspect it. I do not code, I am self-taught for this website only. Thx. :3</strong>
+        </p3>
+
+    </div>
+  
+    <div class="divider"> 🍄 🌿  🍄 🌿  🍄</div>
+
+
+    <div class="divideropaque">🌿  Interact With The World Around You ! 🌿</div>
+
+<!-- Hint Box -->
+    <div class=dropdown>
+        Can't figure out how to find the Writings?
+        <div class="dropdown-content">
+        <p> ! <strong> Hint:</strong> Hover Over The Mushrooms and Birds to Discover Writing Collections, or use the menu up top!</p>
+        
+    </div class=dropdown-content>
+    </div class=dropdown>
+
+    <a href="Placeholder.html" class="bg-anchored-button3">
+    <img src="https://cdn.corenexis.com/files/c/2873959720.png" alt="Button Image">
+</a>
+
+    <!-- Contact Section -->
+    <div class="profile" id="contact">
+    <h2>Leave Me a Note! 📝</h2>
+
+    <form action="https://formspree.io/f/xkokbrnv" method="POST">
+
+        <label style="display: block; margin-bottom: 10px; color: #6b8e23; font-weight: bold;">
+            Your Name:
+            <input type="text" name="name" placeholder="Enter your name..."
+            style="width: 100%; padding: 10px; border: 2px solid #8fbc8f; border-radius: 8px; margin-top: 5px;">
+        </label>
+
+        <label style="display: block; margin-bottom: 10px; color: #6b8e23; font-weight: bold;">
+            Your Email:
+            <input type="email" name="email" placeholder="you@example.com"
+            style="width: 100%; padding: 10px; border: 2px solid #8fbc8f; border-radius: 8px; margin-top: 5px;">
+        </label>
+
+        <label style="display: block; margin-bottom: 10px; color: #6b8e23; font-weight: bold;">
+            Your Message:
+            <textarea name="message" placeholder="Leave your thoughts..."
+            style="width: 100%; padding: 10px; border: 2px solid #8fbc8f; border-radius: 8px; margin-top: 5px; min-height: 120px;"></textarea>
+        </label>
+
+        <button type="submit" style="background: linear-gradient(135deg, #6b8e23, #8fbc8f); color: white; padding: 12px 30px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 1em; border: 2px solid #333;">
+            Send Message 🌿
+        </button>
+
+    </form>
+</div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>🌿 Luke West © 2026 🌿</p>
+        <p>"He will have the pleasure of trying the resources of his spirit" - John Keats</p>
+        <p>~ Thank you for letting your interest win out. ~</p>
+    </div>
+  
+
+</body>
+</html>
+    
+    
